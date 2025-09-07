@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pernikahan Kadek & Lisa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade&display=swap" rel="stylesheet" />
+
+
+
+<style>
+
+
+
+.hero-video-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.hero-video-bottom {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+</style>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+   /* body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+    }*/
+	body {
+  background-color: #fffdf9;
+  background-image: 
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2M2YjdhMyIgb3BhY2l0eT0iMC4zIj48cGF0aCBkPSJNMTAgMjBjMC01IDUtMTAgMTAtMTAgNSA1LTEwIDE1LTEwIDE1cyAxNSA1IDEwIDE1Yy01IDAtMTAtNS0xMC0xMHoiLz48L2c+PC9zdmc+");
+  background-repeat: repeat;
+  background-size: 120px 120px;
+  background-attachment: fixed;
+}
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ccc;
+    }
+    button {
+      background: maroon;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #a30000;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: maroon;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      display: none;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    img.mosque-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    audio {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+      .section {
+        padding: 60px 15px;
+      }
+    }
+	
+	/*venue background*/
+	.venue-bg {
+  background: #fdf9f3; /* optional light theme */
+}
+@media (max-width: 480px) {
+  .venue-bg img {
+    max-height: 160px;
+  }
+}
+
+.closing-bg {
+  background: linear-gradient(135deg, #fff5f7, #ffe7e9);
+  color: #702020;
+}
+
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.countdown-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 80px;
+}
+
+.countdown-item span {
+  font-size: 32px;
+  font-weight: bold;
+  color: maroon;
+  display: block;
+}
+
+.countdown-item label {
+  font-size: 14px;
+  color: #333;
+}
+  </style>
+  
+  
+ <style>
+
+/* Confetti Animation */
+.confetti {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%;
+  animation: fall 5s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
+✅
+  </style>
+<style>
+.islamic-footer {
+  background: #f9f3ef;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.dua-text {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.salam-footer {
+  font-size: 24px;
+  color: #7a0000;
+  font-family: 'Scheherazade', serif;
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.arabic-calligraphy-container {
+  margin-top: 40px;
+  padding: 30px 10px;
+  background: #fff3f3;
+  border-top: 2px dashed #ccc;
+}
+
+.arabic-calligraphy {
+  font-family: 'Amiri', serif;
+  font-size: 48px;
+  color: #8b0000;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  animation: riseUp 2.5s ease-out;
+}
+
+.latin-trans {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+@keyframes riseUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+}
+
+
+</style>
+
+<style>
+#venue {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#venue h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#venue p {
+  margin: 4px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.mosque-img-wrapper {
+  max-width: 400px;
+  margin: 12px 0;
+}
+
+.mosque-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+  max-height: 200px;
+}
+
+#venue button {
+  margin-top: 10px;
+}
+</style>
+
+  <script>
+    // Countdown Timer
+document.addEventListener("DOMContentLoaded", function () {
+    const targetDate = new Date("2025-10-18T15:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  });
+  </script>
+</head>
+<body>
+
+<!-- Auto-play Background Music -->
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+<!-- Hero Section -->
+<section id="hero" class="section">
+  <h1>KADEK & LISA</h1>
+  <p class="subtitle">invited you to their wedding</p>
+  <div class="date">18.10.25</div>
+  <blockquote>
+    ““Demikianlah mereka bukan lagi dua, melainkan satu. 
+Karena itu, apa yang telah dipersatukan Allah, 
+tidak boleh diceraikan manusia”....” (Matius 19:6)
+  </blockquote>
+    <div class="hero-video-wrapper">
+  <video controls muted playsinline class="hero-video-bottom">
+    <source src="..." type="video/mp4" />
+    Browser Anda tidak mendukung video.
+  </video>
+</div>
+
+</section>
+
+<!-- Invitation Section -->
+<section id="invitation" class="section">
+  <!--p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+  <p class="salam">Assalamu'alaikum Warahmatullahi Wabarakatuh</p-->
+  <p>Dengan memohon rahmat dan restu Allah Bapa, kami bermaksud mengundang Bapak/Ibu/Saudara/i ke acara pernikahan kami:</p>
+  <h2>Kadek Dwi Mahayasa</h2>
+  <p class="parents">Putra Bpk. I Komang Suyasa & Ibu Yuliani Endan Trikaeksi</p>
+  <p class="dengan">dengan</p>
+  <h2>Lisa Agustin Santoso</h2>
+  <p class="parents">Putri Bpk. Bambang Suwito Santoso & Ibu Sri Wahyuni</p>
+  
+
+</section>
+
+<!-- Venue Section -->
+<section id="venue" class="section venue-bg" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 20px;">
+  <h3 style="margin-bottom: 10px;">Pemberkatan</h3>
+  <p><strong>Jumat, 18 Oktober 2025</strong></p>
+  <p>Pukul: 14.00 WIB - 15.30 WIB</p>
+  <p>Resepsi Pukul : 18.00 WIB - 20.00 WIB </p>
+  <div class="mosque-img-wrapper">
+    <img src="mosque.png" alt="Srawung Resto & Kopi" class="mosque-img" />
+  </div>  
+  <div style="font-size: 14px; line-height: 1.4; max-width: 400px;">
+    <p><strong>Tempat:</strong> Srawung Resto & Kopi</p>
+    <p>Jl. Cangkringan, Tegal Sari, Purwomartani</p>
+    <p>Kec. Kalasan, Kabupaten Sleman, DIY 55571</p>
+    <p><strong>Undangan berlaku untuk 2 (dua) orang</strong> </p>
+  </div>
+
+  <button style="margin-top: 15px;" onclick="window.open('https://maps.app.goo.gl/yBVShCtL55NN5eZZ7', '_blank')">
+    📍 Lokasi Acara
+  </button>
+</section>
+
+<!-- Venue Map Section -->
+<section id="venue-map" style="padding:40px 20px; text-align:center; background:#f9f9f9;">
+  <h3 style="margin-bottom:20px; font-size:1.6rem; color:#702020;">
+    Denah Lokasi
+  </h3>
+  <img src="venue-map.png" 
+       alt="Denah Lokasi Srawung Resto & Kopi" 
+       style="max-width:600px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.2);" />
+  <p style="margin-top:12px; font-size:14px; color:#555;">
+    <a href="https://maps.app.goo.gl/LFSemvPSNsbc7WEY9" target="_blank" style="color:#0066cc; text-decoration:none;">
+      Buka di Google Maps
+    </a>
+  </p>
+</section>
+
+
+<!-- Countdown -->
+<section id="closing" class="section closing-bg">
+  <h3 style="font-size: 28px; margin-bottom: 10px;">Menuju Hari Bahagia</h3>
+  <p style="font-size: 16px; margin-bottom: 30px;">Hitung mundur menuju momen yang penuh berkah:</p>
+
+  <div id="countdown" class="countdown-box">
+    <div class="countdown-item"><span id="days">00</span><label>Hari</label></div>
+    <div class="countdown-item"><span id="hours">00</span><label>Jam</label></div>
+    <div class="countdown-item"><span id="minutes">00</span><label>Menit</label></div>
+    <div class="countdown-item"><span id="seconds">00</span><label>Detik</label></div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="section islamic-footer">
+<section id="ending" >
+    <p class="dua-text">
+    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i <br />
+    berkenan memberi doa dan restu kepada kedua mempelai
+  </p>  
+   <!--p class="salam-footer">وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p-->
+   <div class="arabic-calligraphy">
+    <p class="latin-trans">Tuhan membuat segala sesuatu indah pada waktuNya. Indah saat Dia mempertemukan, indah saat Dia menumbuhkan kasih, dan indah saat Dia mempersatukan dalam ikatan pernikahan</p>
+    <p class="latin-trans">"Atas Kehadirannya Kami Ucapkan Terimakasih"</p>
+  </div>
+</section>
+</footer>
+
+<!-- Auto Scroll Script -->
+<script>
+  const sections = ["hero", "invitation", "venue", "closing","ending"];
+  let currentIndex = 0;
+  let userInteracted = false;
+  let scrollTimer;
+
+  function scrollToSection(index, override = false) {
+    if (!override && userInteracted) return;
+    const section = document.getElementById(sections[index]);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function scrollToTop() {
+    userInteracted = false; // allow auto-scroll again
+    currentIndex = 0;
+    scrollToSection(0, true);
+  }
+
+  function autoScrollSections() {
+    if (userInteracted) return;
+    currentIndex = (currentIndex + 1) % sections.length;
+    scrollToSection(currentIndex);
+  }
+
+  function startAutoScroll() {
+    scrollTimer = setInterval(autoScrollSections, 8000); // smoother pace
+  }
+
+  // Start scroll after 2 seconds delay
+  setTimeout(startAutoScroll, 2000);
+
+  // Detect user interaction
+  window.addEventListener("wheel", () => userInteracted = true);
+  window.addEventListener("touchstart", () => userInteracted = true);
+  window.addEventListener("click", () => userInteracted = true);
+  window.addEventListener("keydown", () => userInteracted = true);
+
+  // Back to top button show/hide logic
+  const backToTopBtn = document.getElementById("backToTop");
+  window.onscroll = () => {
+    backToTopBtn.style.display = (document.documentElement.scrollTop > 300)
+      ? "block" : "none";
+  };
+</script>
+
+<script>
+  // Confetti generator
+  document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.querySelector(".islamic-footer");
+
+    for (let i = 0; i < 30; i++) {
+      const confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.animationDelay = Math.random() * 5 + "s";
+      confetti.style.backgroundColor = ["gold", "maroon", "white", "#ffb6b6"][i % 4];
+      footer.appendChild(confetti);
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const video = document.querySelector(".hero-video-bottom");
+
+    if (video) {
+      // When user clicks on the video area
+      video.addEventListener("play", function () {
+        video.muted = false; // Unmute once played
+      });
+
+      // Optional: Ensure mobile compatibility with inline playback
+      video.setAttribute("playsinline", true);
+    }
+  });
+</script>
+
+</body>
+</html>
